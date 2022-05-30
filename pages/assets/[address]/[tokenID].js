@@ -15,9 +15,7 @@ function NFT() {
   const { tokenID } = router.query
 
   const address = useAddress()
-  const marketplace = useMarketplace(
-    process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS,
-  )
+  const marketplace = useMarketplace('0xB0f143FEe9a7CE65dc1dD46995DB27f31972f118')
 
   useEffect(() => {
     getListing()
