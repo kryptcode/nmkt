@@ -9,7 +9,7 @@ const style = {
 
 const Listings = () => {
   const [listings, setListings] = useState([])
-  const marketplace = useMarketplace('0xB0f143FEe9a7CE65dc1dD46995DB27f31972f118')
+  const marketplace = useMarketplace('0x937ee9cD5D230c8f91f2938c5c672111e591068d')
 
   useEffect(() => {
     getListings()
