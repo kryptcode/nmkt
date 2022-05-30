@@ -13,7 +13,7 @@ const Listings = () => {
 
   useEffect(() => {
     getListings()
-  }, [])
+  }, [listings])
 
   const getListings = async () => {
     try {
@@ -24,6 +24,8 @@ const Listings = () => {
       console.error(error)
     }
   }
+
+  // console.log(listings);
 
   return (
     <div className={style.wrapper}>
